@@ -1,3 +1,3 @@
 <p align="center">
-Testing Issue Templates
+Testing Issue Templates and Pull Request Templates
 </p>
