@@ -1,0 +1,48 @@
+name: 🚀 Feature
+description: Create a feature request
+title: "<title>"
+labels: [feature]
+assignees:
+  - epicfaace
+  - jacqueswho
+  - heath-freenome
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I've updated [docs](https://react-jsonschema-form.readthedocs.io/) if needed
+          required: false
+        - label: I've [checked the rendering](https://react-jsonschema-form.readthedocs.io/en/latest/#contributing) of the Markdown text I've added
+          required: true
+        - label: I've added and/or updated tests. I've run `npm run test:update` to update snapshots, if needed.
+          required: true
+        - label: I've updated the [changelog](https://github.com/rjsf-team/react-jsonschema-form/blob/master/CHANGELOG.md) with a description of the PR
+          required: false
+        - label: I've updated the playground with an example use of the feature
+          required: false
+  - type: checkboxes
+    attributes:
+      label: Non-trivial and you'd like to schedule a synchronous review
+      options:
+        - label: Added to [meeting agenda](https://docs.google.com/document/d/12PjTvv21k6LIky6bNQVnsplMLLnmEuypTLQF8a-8Wss/edit)
+          required: true
+  - type: dropdown
+    id: theme
+    attributes:
+      label: What theme are you using?
+      options:
+        - core
+        - antd
+        - bootstrap-4
+        - chakra-ui
+        - fluent-ui
+        - material-ui
+        - semantic-ui
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reasons for making this change
+    validations:
+      required: true
